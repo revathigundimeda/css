@@ -1,20 +1,42 @@
-.one{
-	background: #58FF33;
-}
+
 .card{
 	border: 1px solid lightgray;
 	width: 20rem;
 	text-align: center;
 	border-radius: 4px;
 }
-.left{ 
-	width: 25%;
+.card img {
+	width: 100%;
 }
 .right{
 	border: 1px solid lightgray;
-	width: 75%;
+	width: 70%;
 	margin-left: 1%;
 }
 .parent {
 	display: flex;
+	flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+	.card {
+		background-color: rgb(0, 255, 255);
+		width: 100%;
+	}
+	.right,.left {
+		width: 100%;
+
+	}
+	.right {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+}
+@media screen and (min-width:601px) and (max-width:991px) {
+.right,.left{
+	width:48%;
+}
+.right {
+	background-color: lightgreen;
+margin-left: 0px;
+}
 }
